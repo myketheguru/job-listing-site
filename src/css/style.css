@@ -1,0 +1,59 @@
+header {
+    background-image: url('../assets/images/bg-header-desktop.svg');
+    background-size: cover;
+    background-color: #5ba4a4;
+    height: 150px;
+    position: relative;
+}
+
+header .filter-block {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 20px;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    box-shadow: 0 0 15px 10px #5ba4a44b;
+    display: flex;
+    gap: 10px;
+}
+
+header .filter-block > button {
+    margin-left: auto;
+    font-size: 17px;
+    background-color: transparent;
+    color: #5ba4a4;
+    border: none;
+    cursor: pointer;
+}
+
+header .filter-block .filter {
+    display: flex;
+    width: 150px;
+    height: 45px;
+    background-color: #5ba4a44b;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+header .filter-block .filter span {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    color: #5ba4a4;
+}
+
+header .filter-block .filter button {
+    width: 45px;
+    border: none;
+    cursor: pointer;
+    background-color: #5ba4a4;
+    color: white;
+    transition: .5s;
+}
+
+header .filter-block .filter button:hover {
+    background-color: #000;
+}
