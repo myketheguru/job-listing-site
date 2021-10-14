@@ -61,7 +61,8 @@ function App() {
   return (
     <div className="App">
       <header>
-        <div className="filter-block" hidden={filters.length <= 0}>
+        {filters.length !== 0 &&
+          <div className="filter-block">
           {
             filters.map((item, index) => {
               return (
@@ -74,7 +75,7 @@ function App() {
           }
 
           <button onClick={clearFilter}>clear</button>
-        </div>
+        </div>}
       </header>
       <main>
         {

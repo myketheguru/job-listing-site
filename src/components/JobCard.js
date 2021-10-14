@@ -17,10 +17,12 @@ const JobCard = ({data, actions}) => {
                     <img src={allImages[imgName(data.company)]} alt="" />
                 </figure>
                 <div className="text">
-                    <p className="title">{data.company}</p>
-                    <div className="bagdes">
-                        <button hidden={data.new === false} className="new-badge">New</button>
-                        <button hidden={data.featured === false} className="featured-badge">Featured</button>
+                    <div className="top-text">
+                        <p className="title">{data.company}</p>
+                        <div className="bagdes">
+                            <button hidden={data.new === false} className="new-badge">New</button>
+                            <button hidden={data.featured === false} className="featured-badge">Featured</button>
+                        </div>
                     </div>
                     <h2>{data.position}</h2>
                     <div className="info">
